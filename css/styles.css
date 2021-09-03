@@ -571,4 +571,36 @@ h2 {
   width: 5rem;
 }
 
+.message-user-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.message-user-form input,
+.message-user-form textarea {
+  margin-bottom: 1rem;
+  background: #F5F5F5;
+}
+
+.message-user-form input::placeholder,
+.message-user-form textarea::placeholder {
+  color: lightgray;
+}
+
+.message-user-form input,
+.message-user-form textarea,
+.message-user-form button {
+  padding: 1rem;
+  border-radius: 6px;
+  outline: 0;
+  border: 1px solid lightgray;
+}
+
+.message-user-form button {
+  background: #7477BF;
+  color: white;
+  text-transform: uppercase;
+}
+
 /*# sourceMappingURL=styles.css.map */
