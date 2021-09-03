@@ -487,4 +487,42 @@ h2 {
   background: #81C98F;
 }
 
+.socials {
+  display: flex;
+  background: #F5F5F5;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.socials-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #7477BF;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  margin-right: 1rem;
+}
+
+.socials-logo {
+  display: block;
+  height: 2rem;
+  fill: white;
+}
+
+.social-network {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #7477BF;
+}
+
+.social-stats {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: gray;
+}
+
 /*# sourceMappingURL=styles.css.map */
