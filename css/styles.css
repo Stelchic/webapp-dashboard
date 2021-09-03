@@ -343,6 +343,11 @@ template {
   padding: 0;
 }
 
+header,
+main {
+  padding: 0 1rem;
+}
+
 * {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -377,7 +382,6 @@ header {
   justify-content: space-around;
   background: #7477BF;
   height: 5rem;
-  padding: 0 1rem;
 }
 
 header h1 {
@@ -432,6 +436,25 @@ h2 {
   background-color: #F7F7F7;
   border-bottom: 1px solid lightgray;
   border-left: 1px solid lightgray;
+}
+
+.alerts {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #7477bf;
+  border-radius: 6px;
+}
+
+.alerts p,
+.alerts a {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.alerts a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
