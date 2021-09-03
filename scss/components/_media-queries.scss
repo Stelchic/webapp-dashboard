@@ -1,0 +1,78 @@
+@media only screen and (min-width: 768px) {
+    body {
+        display: grid;
+        grid-template-columns: auto 1fr; 
+        grid-template-rows: auto 1fr; 
+        grid-template-areas: 
+            "header header"
+            "nav main"; 
+    }
+    header {
+        grid-area: header;
+    }
+    nav {
+        grid-area: nav;
+    }
+    main {
+        display: grid;
+        grid-area: main;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(9, auto);
+        grid-template-areas: 
+            "pages pages"
+            "alerts alerts"
+            "traffic traffic"
+            "daily mobile"
+            "social social"
+            "new-members new-members"
+            "recent-activity recent-activity"
+            "message-user message-user"
+            "settings settings";
+    }
+    nav {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: .5rem .7rem;
+    }
+    nav svg {
+        margin: .5rem 0;
+    }
+    .pages {
+        grid-area: pages;
+    }
+    .alerts {
+        grid-area: alerts;
+    }
+    .traffic {
+        grid-area: traffic;
+    }
+    .daily {
+        grid-area: daily;
+        border-right: 1px solid lightgray;
+    }
+    .mobile-users {
+        grid-area: mobile;
+    }
+    .social {
+        grid-area: social;
+    }
+    .social-flex {
+        display: flex;
+        justify-content: center;
+    }
+    .instagram {
+        margin: 1rem .4rem;
+    }
+    .new-members {
+        grid-area: new-members;
+    }
+    .recent-activity {
+        grid-area: recent-activity;
+    }
+    .message-user {
+        grid-area: message-user;
+    }
+    .settings {
+        grid-area: settings;
+    }
+}
