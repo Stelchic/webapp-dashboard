@@ -503,6 +503,11 @@ h2 {
   background: #81C98F;
 }
 
+.mobile-users .widget-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
 .socials {
   display: flex;
   background: #F5F5F5;
