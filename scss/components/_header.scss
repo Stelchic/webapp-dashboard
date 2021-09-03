@@ -9,9 +9,23 @@ header h1 {
     margin: 0;
     margin-right: auto;
 }
+@keyframes ring {
+    25% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    75% {
+        transform: rotate(10deg);
+    }
+}
 .bell {
     height: 2rem;
     fill: white;
+}
+.bell:hover {
+    animation: ring 1s;
 }
 .verticle-line {
     border-left: 1px solid #a7a9bf;
