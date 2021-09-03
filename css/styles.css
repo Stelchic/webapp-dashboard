@@ -338,6 +338,12 @@ template {
 }
 
 * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
@@ -348,6 +354,11 @@ header {
 
 h1 {
   font-size: 1.6rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 
 b {
@@ -389,6 +400,38 @@ header h1 {
   border-radius: 50%;
   height: 65%;
   margin-right: 1rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #4D4C72;
+  height: 4rem;
+}
+
+nav svg {
+  height: 2.5rem;
+  fill: white;
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 4rem;
+}
+
+h2 {
+  padding: 0 1rem;
+}
+
+.empty-pages {
+  height: 100%;
+  width: 100%;
+  background-color: #F7F7F7;
+  border-bottom: 1px solid lightgray;
+  border-left: 1px solid lightgray;
 }
 
 /*# sourceMappingURL=styles.css.map */

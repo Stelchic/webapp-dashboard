@@ -1,0 +1,16 @@
+.pages {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 4rem;
+}
+h2 {
+    padding: 0 1rem;
+}
+.empty-pages {
+    height: 100%;
+    width: 100%;
+    background-color: #F7F7F7;
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+}
