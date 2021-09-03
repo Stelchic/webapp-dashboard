@@ -343,9 +343,13 @@ template {
   padding: 0;
 }
 
-header,
-main {
+header {
   padding: 0 1rem;
+}
+
+section {
+  padding: 1rem;
+  border-bottom: 1px solid lightgray;
 }
 
 * {
@@ -364,6 +368,12 @@ h1 {
 h2 {
   font-size: 1.4rem;
   font-weight: 400;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 b {
@@ -441,7 +451,7 @@ h2 {
 .alerts {
   display: flex;
   justify-content: space-between;
-  margin: 1rem 0;
+  margin: 1rem;
   padding: 1rem;
   background: #7477bf;
   border-radius: 6px;
@@ -455,6 +465,26 @@ h2 {
 
 .alerts a {
   text-decoration: none;
+}
+
+.traffic-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1rem 0;
+}
+
+.traffic-nav li {
+  font-size: 1.1rem;
+  font-weight: 400;
+  display: block;
+  padding: 0.8rem;
+}
+
+.time-selected {
+  color: white;
+  border-radius: 30px;
+  background: #81C98F;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,18 @@
+.traffic-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem 0;
+}
+.traffic-nav li {
+    font-size: 1.1rem;
+    font-weight: 400;
+    display: block;
+    padding: .8rem;
+    
+}
+.time-selected {
+    color: white;
+    border-radius: 30px;
+    background: #81C98F;
+}
