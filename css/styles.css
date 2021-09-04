@@ -845,6 +845,14 @@ input:checked + label {
   .settings {
     grid-area: settings;
   }
+
+  .toggle-switch {
+    justify-content: flex-start;
+  }
+
+  .toggle-switch p {
+    flex-basis: 25%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
