@@ -126,4 +126,14 @@
             "new-members recent-activity"
             "message-user settings";
     }
+    .new-members,
+    .message-user {
+        border-right: 1px solid lightgray;
+    }
+    .toggle-switch p {
+        flex-basis: 45%;
+    }
+    select {
+        margin-top: 4rem;
+    }
 }
