@@ -46,6 +46,14 @@
     .traffic {
         grid-area: traffic;
     }
+    .traffic-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .traffic-nav {
+        justify-content: flex-end;
+    }
     .daily {
         grid-area: daily;
         border-right: 1px solid lightgray;
@@ -58,10 +66,10 @@
     }
     .social-flex {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
     }
-    .instagram {
-        margin: 1rem .4rem;
+    .socials {
+        width: 32%;
     }
     .new-members {
         grid-area: new-members;
