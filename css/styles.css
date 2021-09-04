@@ -596,6 +596,7 @@ h2 {
   margin-left: auto;
   font-size: 2rem;
   color: lightgray;
+  display: none;
 }
 
 .message-user-form {
@@ -831,6 +832,10 @@ input:checked + label {
   .recent-activity-text {
     display: flex;
     flex-direction: column;
+  }
+
+  .arrow-btn {
+    display: inline;
   }
 
   .message-user {
