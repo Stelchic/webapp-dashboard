@@ -592,6 +592,12 @@ h2 {
   width: 5rem;
 }
 
+.arrow-btn {
+  margin-left: auto;
+  font-size: 2rem;
+  color: lightgray;
+}
+
 .message-user-form {
   display: flex;
   flex-direction: column;
@@ -798,7 +804,8 @@ input:checked + label {
     grid-area: new-members;
   }
 
-  .new-members-container {
+  .new-members-container,
+.recent-activity-container {
     display: flex;
     justify-content: flex-start;
     text-align: left;
@@ -815,6 +822,15 @@ input:checked + label {
 
   .recent-activity {
     grid-area: recent-activity;
+  }
+
+  .recent-activity-container img {
+    margin-right: 1rem;
+  }
+
+  .recent-activity-text {
+    display: flex;
+    flex-direction: column;
   }
 
   .message-user {
