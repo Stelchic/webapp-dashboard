@@ -105,3 +105,17 @@
         flex-basis: 25%;
     }
 }
+@media only screen and (min-width: 1024px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(7, auto);
+        grid-template-areas: 
+            "pages pages"
+            "alerts alerts"
+            "traffic traffic"
+            "daily mobile"
+            "social social"
+            "new-members recent-activity"
+            "message-user settings";
+    }
+}
