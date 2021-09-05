@@ -1,2 +1,3 @@
-@import 'base/index';
-@import 'components/index';
+@forward 'global/index';
+@forward 'base/index';
+@forward 'components/index';
