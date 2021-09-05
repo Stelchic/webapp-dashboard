@@ -703,6 +703,21 @@ input:checked + label {
   justify-content: space-between;
 }
 
+.select {
+  position: relative;
+}
+
+.select::after {
+  content: "";
+  position: absolute;
+  background: url(/svgs/down-arrow.svg) no-repeat;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 1rem;
+  right: 1rem;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.8));
+}
+
 .settings select {
   margin-bottom: 1rem;
   padding: 0.9rem 0.8rem;
@@ -710,10 +725,7 @@ input:checked + label {
   border-radius: 6px;
   border: 1px solid lightgray;
   width: 100%;
-}
-
-.settings select:invalid {
-  color: red;
+  appearance: none;
 }
 
 .settings-buttons button {
