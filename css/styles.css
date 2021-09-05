@@ -892,6 +892,10 @@ input:checked + label {
     flex-basis: 45%;
   }
 
+  .select::after {
+    margin-top: 4rem;
+  }
+
   select {
     margin-top: 4rem;
   }
