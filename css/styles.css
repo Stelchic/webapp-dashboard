@@ -420,6 +420,21 @@ header h1 {
   animation: ring 1s;
 }
 
+.bell-svg {
+  position: relative;
+}
+
+.bell-svg::after {
+  content: "";
+  position: absolute;
+  width: 0.4rem;
+  height: 0.4rem;
+  top: -0.4rem;
+  right: 0;
+  background: #81C98F;
+  border-radius: 50%;
+}
+
 .verticle-line {
   border-left: 1px solid #a7a9bf;
   height: 65%;

@@ -27,6 +27,19 @@ header h1 {
 .bell:hover {
     animation: ring 1s;
 }
+.bell-svg {
+    position: relative;
+}
+.bell-svg::after {
+    content: "";
+    position: absolute;
+    width: .4rem;
+    height: .4rem;
+    top: -.4rem;
+    right: 0;
+    background: #81C98F;
+    border-radius: 50%;
+}
 .verticle-line {
     border-left: 1px solid #a7a9bf;
     height: 65%;
