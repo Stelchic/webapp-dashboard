@@ -63,16 +63,6 @@ sup {
   font-weight: 400;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  padding: 0 1rem;
-}
-
 section {
   padding: 1rem;
   border-bottom: 1px solid lightgray;
@@ -84,6 +74,7 @@ header {
   justify-content: space-around;
   background: #7477BF;
   height: 5rem;
+  padding: 0 1rem;
 }
 
 header h1 {
