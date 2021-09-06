@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--purple);
+    height: 5rem;
+    padding: 0 1rem;
+}
+
+.right-hand-side {
+    display: flex;
+    align-items: center;
+}
+
+.bell {
+    position: relative;
+    margin-right: 1rem;
+    &::after {
+        content: "";
+        position: absolute;
+        width: .4rem;
+        height: .4rem;
+        top: -.4rem;
+        right: 0;
+        background: var(--green);
+        border-radius: 50%;
+    }
+    &-svg {
+        height: 1.8rem;
+        fill: var(--white);
+        &:hover {
+            animation: ring 1s;
+        }
+    }
+}
+
+.verticle-line {
+    border-left: 1px solid var(--gray);
+    height: 3.2rem;
+    margin-right: 1rem;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    height: 3.2rem;
+    margin-right: 1rem;
+}
