@@ -3,19 +3,18 @@
     flex-direction: row;
     justify-content: space-around;
     margin: 1rem 0;
+    & li {
+        display: block;
+        padding: .8rem;
+    }
 }
-.traffic-nav li {
-    font-size: 1.1rem;
-    font-weight: 400;
-    display: block;
-    padding: .8rem;
-    
-}
+
 .time-selected {
-    color: white;
+    color: var(--white);
     border-radius: 30px;
-    background: #81C98F;
+    background: var(--green);
 }
+
 .mobile-users .widget-container {
     width: 70%;
     margin: 0 auto;

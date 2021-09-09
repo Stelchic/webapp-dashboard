@@ -1,3 +1,5 @@
+@use '../utils/keyframes';
+
 .header {
     display: flex;
     align-items: center;
@@ -5,11 +7,10 @@
     background: var(--purple);
     height: 5rem;
     padding: 0 1rem;
-}
-
-.right-hand-side {
-    display: flex;
-    align-items: center;
+    &-right {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .bell {
@@ -35,7 +36,7 @@
 }
 
 .verticle-line {
-    border-left: 1px solid var(--gray);
+    border-left: 1px solid var(--light-gray);
     height: 3.2rem;
     margin-right: 1rem;
 }

@@ -1,0 +1,54 @@
+:root {
+    --font: 'Open Sans', sans-serif;
+    --fw300: 300;
+    --fw400: 400;
+}
+
+header {
+    color: var(--white);
+}
+
+h1,
+p {
+    font-weight: var(--fw300);
+}
+
+h2,
+h3,
+b,
+sup,
+li {
+    font-weight: var(--fw400);
+}
+
+h1 {
+    font-size: 1.6rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+    padding: 0 1rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+p {
+    margin: 0;
+}
+
+sup {
+    font-size: .7rem;
+    top: -.6rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    font-size: 1.1rem;
+}

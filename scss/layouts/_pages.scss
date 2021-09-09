@@ -1,0 +1,13 @@
+.pages {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 4rem;
+    &-empty {
+        height: 100%;
+        width: 100%;
+        background-color: var(--white-smoke);
+        border-bottom: 1px solid var(--light-gray);
+        border-left: 1px solid var(--light-gray);
+    }
+}

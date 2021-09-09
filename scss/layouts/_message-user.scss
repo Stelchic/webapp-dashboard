@@ -1,0 +1,25 @@
+.message-user-form {
+    display: flex;
+    flex-direction: column;
+    & input,
+    & textarea {
+        margin-bottom: 1rem;
+        background: var(--white-smoke);
+        &::placeholder {
+            color: var(--light-gray);
+        }
+    }
+    & input,
+    & textarea,
+    & button {
+        padding: 1rem;
+        border-radius: 6px;
+        outline: 0;
+        border: 1px solid var(--light-gray);
+    }
+    & button {
+        background: var(--purple);
+        color: var(--white);
+        text-transform: uppercase;
+    }
+}

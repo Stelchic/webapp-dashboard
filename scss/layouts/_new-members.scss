@@ -1,0 +1,27 @@
+.new-members {
+    &-container {
+        margin: 1rem 0;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--light-gray);
+        text-align: center;
+        &:last-of-type {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            border-bottom: 0;
+        }
+        & p,
+        & a {
+            font-weight: var(--fw400);
+        }
+    }
+    &-pic {
+        border-radius: 50%;
+        width: 5rem;
+    }
+    &-text p {
+        margin: 0;
+    }
+    &-text a {
+        color: var(--purple);
+    }
+}

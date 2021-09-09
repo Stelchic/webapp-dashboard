@@ -1,0 +1,23 @@
+.recent-activity {
+    &-container {
+        margin: 1rem 0;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--light-gray);
+        text-align: center;
+        &:last-of-type {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            border-bottom: 0;
+        }
+    }
+    &-pic {
+        border-radius: 50%;
+        width: 5rem;
+    }
+}
+.arrow-btn {
+    margin-left: auto;
+    font-size: 2rem;
+    color: var(--purple);
+    display: none;
+}
