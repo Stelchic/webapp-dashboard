@@ -26,3 +26,14 @@ sendBtn.addEventListener("click", (e) => {
         message.value = "";
     }
 });
+
+const bell = document.querySelector(".bell");
+const dropdown = document.querySelector(".dropdown");
+
+const bellClick = bell.addEventListener("click", (e) => {
+    if (dropdown.style.display === '') {
+        dropdown.style.display = 'flex';
+    } else {
+        dropdown.style.display = '';
+    }
+});
