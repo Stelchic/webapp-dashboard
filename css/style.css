@@ -596,12 +596,18 @@ input:checked + label {
     flex-basis: 45%;
   }
 
-  .select::after {
+  select,
+.select::after {
     margin-top: 4rem;
   }
 
-  select {
-    margin-top: 4rem;
+  label::after {
+    left: 0.1rem;
+  }
+
+  label::after,
+label::before {
+    top: 0.15rem;
   }
 }
 

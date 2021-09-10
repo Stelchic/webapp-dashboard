@@ -133,10 +133,15 @@
     .toggle-switch p {
         flex-basis: 45%;
     }
+    select,
     .select::after {
         margin-top: 4rem;
     }
-    select {
-        margin-top: 4rem;
+    label::after {
+        left: .1rem;
+    }
+    label::after,
+    label::before {
+        top: .15rem;
     }
 }
