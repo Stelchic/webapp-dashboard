@@ -115,3 +115,53 @@ const autocompleteTypeName = autocompleteUl.addEventListener('click', (e) => {
         } 
     }
 });
+
+const saveBtn = document.getElementById('save');
+const cancelBtn = document.getElementById('cancel');
+
+const emailSwitch = document.getElementById('email-switch');
+const profileSwitch = document.getElementById('profile-switch');
+const timezone = document.getElementById('timezone');
+
+const getChecked = (checkbox) => {
+    if (checkbox.checked === true) {
+        return 'true';
+    } else {
+        return 'false';
+    }
+};
+
+const saveBtnClick = saveBtn.addEventListener('click', (e) => {
+    localStorage.setItem('emailSwitch', getChecked(emailSwitch))
+    localStorage.setItem('profileSwitch', getChecked(profileSwitch))
+    localStorage.setItem('timezone', timezone.value)
+});
+
+const cancelBtnClick = cancelBtn.addEventListener('click', (e) => {
+    emailSwitch.checked = false;
+    profileSwitch.checked = false;
+    timezone.value = 'default';
+    localStorage.clear();
+});
+
+const loadLocalStorage = () => {
+    if (localStorage.getItem('emailSwitch')) {
+        if (localStorage.getItem('emailSwitch') === 'true') {
+            emailSwitch.checked = true;
+        } else {
+            emailSwitch.checked = false;
+        }
+    }
+    if (localStorage.getItem('profileSwitch')) {
+        if (localStorage.getItem('profileSwitch') === 'true') {
+            profileSwitch.checked = true;
+        } else {
+            profileSwitch.checked = false;
+        }
+    }
+    if (localStorage.getItem('timezone')) {
+        timezone.value = localStorage.getItem('timezone');
+    }
+};
+
+loadLocalStorage();
