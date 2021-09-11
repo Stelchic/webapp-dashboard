@@ -349,6 +349,7 @@ section {
 .message-user-form {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .message-user-form input, .message-user-form textarea {
@@ -371,6 +372,38 @@ section {
   background: var(--purple);
   color: var(--white);
   text-transform: uppercase;
+}
+
+.autocomplete {
+  display: none;
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  padding: 0.5rem;
+  background: var(--purple);
+  border: 3px solid var(--dark-purple);
+  border-radius: 6px;
+  color: var(--white);
+}
+
+.autocomplete ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.autocomplete li {
+  margin-bottom: 0.5rem;
+  list-style: none;
+  border-bottom: 1px solid var(--dark-purple);
+  padding-bottom: 0.5rem;
+}
+
+.autocomplete li:last-of-type {
+  border: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .toggle-switch {

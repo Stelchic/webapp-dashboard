@@ -230,8 +230,13 @@
             </section>
             <section class="message-user">
                 <h3>Message User</h3>
-                <form class="message-user-form">
+                <form class="message-user-form" autocomplete="off">
                     <input type="text" placeholder="Search for User" class="form-field" id="userField">
+                    <div class="autocomplete">
+                        <ul class="autocomplete-users" id="autocomplete-users">
+
+                        </ul>
+                    </div>
                     <textarea placeholder="Message for User" class="form-area" id="messageField" rows="6"></textarea>
                     <button class="button" id="sendMessage">Send</button>
                 </form>
