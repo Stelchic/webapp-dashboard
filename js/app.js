@@ -62,6 +62,18 @@ const autocompleteEvent = userField.addEventListener('input', (e) => {
     }
 });
 
+const autocompleteFocus = userField.addEventListener('focus', (e) => {
+    if (autocompleteChilds.length === 0) {
+        autocomplete.style.display = 'none';
+    } else {
+        autocomplete.style.display = 'block';
+    }
+});
+
+const autocompleteBlur = userField.addEventListener('blur', (e) => {
+    autocomplete.style.display = 'none';
+});
+
 const addLi = (name) => {
     if (autocompleteChilds.length === 0) {
         const li = document.createElement('LI');
