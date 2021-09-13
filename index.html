@@ -93,12 +93,24 @@
             <section class="traffic" id="charts">
                 <div class="traffic-header">
                     <h3>Traffic</h3>
-                    <ul class="traffic-nav">
-                        <li class="time-selected">Hourly</li>
-                        <li>Daily</li>
-                        <li>Weekly</li>
-                        <li>Monthly</li>
-                    </ul>
+                    <form class="traffic-nav">
+                        <div class="traffic-nav-time">
+                            <label for="hourly" class="traffic-nav-label">Hourly</label>
+                            <input type="radio" id="hourly" name="traffic-time" class="radio">    
+                        </div>
+                        <div class="traffic-nav-time">
+                            <label for="daily" class="traffic-nav-label">Daily</label>
+                            <input type="radio" id="daily" name="traffic-time" class="radio">
+                        </div>
+                        <div class="traffic-nav-time">
+                            <label for="weekly" class="traffic-nav-label">Weekly</label>
+                            <input type="radio" id="weekly" name="traffic-time" class="radio">    
+                        </div>
+                        <div class="traffic-nav-time">
+                            <label for="monthly" class="traffic-nav-label">Monthly</label>
+                            <input type="radio" id="monthly" name="traffic-time" class="radio"> 
+                        </div>
+                    </form>
                 </div>
                 <div class="widget-container">
                     <canvas id="traffic-chart"></canvas>
@@ -245,13 +257,13 @@
                 <h3>Settings</h3>
                     <div class="toggle-switch">
                         <p>Send Email Notications</p>
-                        <input type="checkbox" name="emailSwitch" id="email-switch">
-                        <label for="email-switch"></label>
+                        <input type="checkbox" name="emailSwitch" id="email-switch" class="checkbox">
+                        <label for="email-switch" class="toggle-switch-label"></label>
                     </div>
                     <div class="toggle-switch">
                         <p>Set Profile to Public</p>
-                        <input type="checkbox" name="profileSwitch" id="profile-switch">
-                        <label for="profile-switch"></label>
+                        <input type="checkbox" name="profileSwitch" id="profile-switch" class="checkbox">
+                        <label for="profile-switch" class="toggle-switch-label"></label>
                     </div>
                 <div class="select">
                     <select class="form-field" id="timezone">

@@ -231,18 +231,20 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 1rem 0;
 }
 
-.traffic-nav li {
-  display: block;
+.traffic-nav-label {
+  cursor: pointer;
   padding: 0.8rem;
 }
 
-.time-selected {
-  color: var(--white);
-  border-radius: 30px;
+.radio {
+  display: none;
+}
+
+.radio:checked + .traffic-nav-label {
   background: var(--green);
+  color: white;
 }
 
 .mobile-users .widget-container {
@@ -413,13 +415,13 @@ section {
   margin-bottom: 1rem;
 }
 
-input[type=checkbox] {
+.checkbox {
   width: 1rem;
   height: 1rem;
   visibility: hidden;
 }
 
-label {
+.toggle-switch-label {
   display: block;
   width: 6rem;
   height: 2rem;
@@ -431,7 +433,7 @@ label {
   transition: 0.5s;
 }
 
-label::after {
+.toggle-switch-label::after {
   content: "";
   width: 1.4rem;
   height: 1.4rem;
@@ -444,7 +446,7 @@ label::after {
   border: 2px solid var(--light-gray);
 }
 
-label::before {
+.toggle-switch-label::before {
   content: "OFF";
   font-size: 1rem;
   color: var(--gray);
@@ -456,20 +458,20 @@ label::before {
   transition: 0.5s;
 }
 
-input:checked + label::after {
+.checkbox:checked + .toggle-switch-label::after {
   left: calc(100% - .3rem);
   transform: translateX(-100%);
   background: var(--white-smoke);
 }
 
-input:checked + label::before {
+.checkbox:checked + .toggle-switch-label::before {
   content: "ON";
   right: calc(100% - 2.4rem);
   color: var(--light-gray);
   transform: translateX(-100%);
 }
 
-input:checked + label {
+.checkbox:checked + .toggle-switch-label {
   background: var(--purple);
 }
 
