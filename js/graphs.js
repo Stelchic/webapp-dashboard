@@ -31,7 +31,7 @@ let trafficChart = new Chart(trafficCanvas, {
     options: trafficOptions
 });
 const dailyCanvas = document.getElementById("daily-chart");
-const dailyData = {
+const dailyChartData = {
     labels: ["S", "M", "T", "W", "T", "F", "S"],
     datasets: [{
         data: [75, 115, 175, 125, 225, 200, 100],
@@ -53,7 +53,7 @@ const dailyOptions = {
 };
 let dailyChart = new Chart(dailyCanvas, {
     type: 'bar',
-    data: dailyData,
+    data: dailyChartData,
     options: dailyOptions
 });
 const mobileCanvas = document.getElementById("mobile-users-chart");
@@ -88,3 +88,41 @@ let mobileChart = new Chart(mobileCanvas, {
     data: mobileData,
     options: mobileOptions
 });
+
+const trafficRadios = document.getElementsByClassName('radio')
+
+const trafficHourly = document.getElementById('hourly');
+const trafficDaily = document.getElementById('daily');
+const trafficWeekly = document.getElementById('weekly');
+const trafficMonthly = document.getElementById('monthly'); 
+
+const hourlyData = [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
+    2500];
+const dailyData = [];
+hourlyData.forEach(e => dailyData.push(e * 24 * Math.random()));
+const weeklyData = []; 
+hourlyData.forEach(e => weeklyData.push(e * 24 * 7 * Math.random()));
+const monthlyData = [];
+hourlyData.forEach(e => monthlyData.push(e * 24 * 7 * 4 * Math.random()));
+
+const updateTrafficChart = (newData) => {
+    trafficChart.data.datasets[0].data = newData;
+    trafficChart.update();
+}
+
+for (let i = 0; i < trafficRadios.length; i++) {
+    const radio = trafficRadios[i];
+    radio.addEventListener('click', (e) => {
+        const radioId = e.target.id;
+        if (radioId === 'hourly') {
+            updateTrafficChart(hourlyData);
+        } else if (radioId === 'daily') {
+            updateTrafficChart(dailyData);
+        } else if (radioId === 'weekly') {
+            updateTrafficChart(weeklyData);
+        } else if (radioId === 'monthly') {
+            updateTrafficChart(monthlyData);
+        }
+    });
+}
+
