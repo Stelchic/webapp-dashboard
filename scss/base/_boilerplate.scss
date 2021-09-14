@@ -14,3 +14,7 @@ body {
     padding: 0;
     font-family: var(--font);
 }
+
+canvas {
+    max-width: 100%;
+}
